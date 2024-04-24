@@ -1,10 +1,10 @@
 import './App.css'
-import EjemploFetch from './Clase7/EjemploFetch';
+import RenderProps from './Clase8/RenderProps'
 
 function App() {
   return (
     <>
-      <EjemploFetch />
+      <RenderProps />
     </>
   )
 }
