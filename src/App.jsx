@@ -1,10 +1,10 @@
 import './App.css'
-import CompFn from './Clase4/CompFn'
+import CompUseEffect from './Clase5/CompUseEffect'
 
 function App() {
   return (
     <>
-      <CompFn />     
+      <CompUseEffect />
     </>
   )
 }
