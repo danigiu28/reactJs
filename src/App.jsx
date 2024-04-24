@@ -1,10 +1,10 @@
 import './App.css'
-import CompUseEffect from './Clase5/CompUseEffect'
+import EjemploMap from './Clase6/EjemploMap'
 
 function App() {
   return (
     <>
-      <CompUseEffect />
+      <EjemploMap />
     </>
   )
 }
