@@ -12,7 +12,7 @@ const Caja = ({ titulo, descripcion, children }) => {
     )
 }
 
-const Titulo = ({ texto }) => {
+const Titulo = ({texto}) => {
     return (
         <h1 className="display-3">{texto}</h1>
     )
