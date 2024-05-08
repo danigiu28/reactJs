@@ -1,27 +1,20 @@
+import { useState } from 'react'
 import './App.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Logo from './Clase9/Logo';
-import Productos from './Clase9/Productos';
-import Arrepentimiento from './Clase9/Arrepentimiento';
-import Footer from './Clase9/Footer';
-import Error404 from './Clase9/Error404';
-import NavBar from './Clase9/NavBar';
+import Eventos from './Clase10/Eventos'
+
 
 function App() {
+  const [visible, setVisible] = useState(true);
+
+const ocultarComponente = () => {
+  setVisible(false);
+}
+
   return (
     <>
-      <BrowserRouter>
-        <Logo />
-        <NavBar />
-        <Routes>
-          <Route exact path={`/`} element={<Productos/>} />
-          <Route exact path={'/categoria/:idCategoria'} element={<Productos />} />
-          <Route exact path={`/arrepentimiento`} element={<Arrepentimiento/>} />
-          <Route path={`/*`} element={<Error404/>} />
+    {visible ?  <Eventos /> : ""}
+    {/* <button className='btn btn-primary' onClick={ocultarComponente}>Ocultar Componente</button> */}
 
-        </Routes>
-        <Footer />
-      </BrowserRouter>
 
     </>
   )
